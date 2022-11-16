@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card cardTitle="Upload File" [options]="false">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <div class="input-group cust-file-button">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile04" (click)="onClick()" multiple="multiple" accept="pdf" >
+              <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" (click)="onSubmit()">Button</button>
+            </div> -->
+          <!-- </div> -->
+          <input type="file" #fileUpload id="fileUpload" name="fileUpload" (click)="onClick()" multiple="multiple" accept="pdf" />
+          <button mat-button color="warn" (click)="onSubmit()" type="submit">  
+            <!-- <mat-icon>file_upload</mat-icon>   -->
+            Submit  
+        </button>  
+        </div>
+      </div>
+    </app-card>
+  </div>
+</div>
